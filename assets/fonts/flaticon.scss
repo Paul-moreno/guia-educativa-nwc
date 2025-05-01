@@ -1,0 +1,137 @@
+$flaticon-font: "flaticon";
+
+@font-face {
+    font-family: $flaticon-font;
+    src: url("./flaticon.ttf?b9da592727b2fa586dfdb7ebee129b1b") format("truetype"),
+url("./flaticon.woff?b9da592727b2fa586dfdb7ebee129b1b") format("woff"),
+url("./flaticon.woff2?b9da592727b2fa586dfdb7ebee129b1b") format("woff2"),
+url("./flaticon.eot?b9da592727b2fa586dfdb7ebee129b1b#iefix") format("embedded-opentype"),
+url("./flaticon.svg?b9da592727b2fa586dfdb7ebee129b1b#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon-map: (
+    "pin": "\f101",
+    "email": "\f102",
+    "clock": "\f103",
+    "phone-ringing": "\f104",
+    "magnifying-glass": "\f105",
+    "right-arrow": "\f106",
+    "left-arrow": "\f107",
+    "ticket": "\f108",
+    "calendar": "\f109",
+    "map": "\f10a",
+    "tick": "\f10b",
+    "quote": "\f10c",
+    "polar-bear": "\f10d",
+    "whale": "\f10e",
+    "bird": "\f10f",
+    "smiling-emoticon-square-face": "\f110",
+    "telephone": "\f111",
+    "plus-symbol": "\f112",
+    "zoo": "\f113",
+    "tiger": "\f114",
+    "elephant": "\f115",
+    "bear": "\f116",
+    "penguin": "\f117",
+    "koala": "\f118",
+    "monkey": "\f119",
+    "daughter": "\f11a",
+    "teen": "\f11b",
+    "clock-1": "\f11c",
+);
+
+.flaticon-pin:before {
+    content: map-get($flaticon-map, "pin");
+}
+.flaticon-email:before {
+    content: map-get($flaticon-map, "email");
+}
+.flaticon-clock:before {
+    content: map-get($flaticon-map, "clock");
+}
+.flaticon-phone-ringing:before {
+    content: map-get($flaticon-map, "phone-ringing");
+}
+.flaticon-magnifying-glass:before {
+    content: map-get($flaticon-map, "magnifying-glass");
+}
+.flaticon-right-arrow:before {
+    content: map-get($flaticon-map, "right-arrow");
+}
+.flaticon-left-arrow:before {
+    content: map-get($flaticon-map, "left-arrow");
+}
+.flaticon-ticket:before {
+    content: map-get($flaticon-map, "ticket");
+}
+.flaticon-calendar:before {
+    content: map-get($flaticon-map, "calendar");
+}
+.flaticon-map:before {
+    content: map-get($flaticon-map, "map");
+}
+.flaticon-tick:before {
+    content: map-get($flaticon-map, "tick");
+}
+.flaticon-quote:before {
+    content: map-get($flaticon-map, "quote");
+}
+.flaticon-polar-bear:before {
+    content: map-get($flaticon-map, "polar-bear");
+}
+.flaticon-whale:before {
+    content: map-get($flaticon-map, "whale");
+}
+.flaticon-bird:before {
+    content: map-get($flaticon-map, "bird");
+}
+.flaticon-smiling-emoticon-square-face:before {
+    content: map-get($flaticon-map, "smiling-emoticon-square-face");
+}
+.flaticon-telephone:before {
+    content: map-get($flaticon-map, "telephone");
+}
+.flaticon-plus-symbol:before {
+    content: map-get($flaticon-map, "plus-symbol");
+}
+.flaticon-zoo:before {
+    content: map-get($flaticon-map, "zoo");
+}
+.flaticon-tiger:before {
+    content: map-get($flaticon-map, "tiger");
+}
+.flaticon-elephant:before {
+    content: map-get($flaticon-map, "elephant");
+}
+.flaticon-bear:before {
+    content: map-get($flaticon-map, "bear");
+}
+.flaticon-penguin:before {
+    content: map-get($flaticon-map, "penguin");
+}
+.flaticon-koala:before {
+    content: map-get($flaticon-map, "koala");
+}
+.flaticon-monkey:before {
+    content: map-get($flaticon-map, "monkey");
+}
+.flaticon-daughter:before {
+    content: map-get($flaticon-map, "daughter");
+}
+.flaticon-teen:before {
+    content: map-get($flaticon-map, "teen");
+}
+.flaticon-clock-1:before {
+    content: map-get($flaticon-map, "clock-1");
+}
