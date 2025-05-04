@@ -1,3 +1,4 @@
+section-contadores
 /* Responsive Css */
 
 @media only screen and (max-width: 1799px) {
@@ -168,7 +169,7 @@
   }
 
   .header-style-one .header-lower {
-    max-width: 60% !important;
+    max-width: 70% !important;
     margin: 0 auto;
   }
 }
@@ -253,7 +254,7 @@
     margin-bottom: 30px;
   }
 
-  .funfact-section {
+  .section-contadores {
     padding-bottom: 90px;
   }
 
@@ -417,7 +418,7 @@
     height: 100%;
   }
 
-  .funfact-section {
+  .section-contadores {
     padding: 70px 0px 35px 0px;
   }
 
@@ -491,7 +492,7 @@
     padding-bottom: 40px;
   }
 
-  .funfact-section {
+  .section-contadores {
     text-align: center;
   }
 
@@ -568,17 +569,6 @@
 }
 
 @media only screen and (max-width: 599px) {
-
-  .events-block-one .inner-box {
-    padding-left: 0px;
-  }
-
-  .events-block-one .inner-box .image-box {
-    position: relative;
-    top: 0px;
-    margin-bottom: 30px;
-    display: inline-block;
-  }
 
   .content_block_three .content-box .text .list-style-one li {
     width: 100%;
@@ -772,10 +762,9 @@
   }
 
   .banner-carousel .content-box h2 {
-    font-size: 40px;
-    line-height: 50px;
+    font-size: 45px;
+    line-height: 80px;
   }
-
 
 }
 

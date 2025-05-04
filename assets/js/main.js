@@ -16,7 +16,7 @@
         })
     }
 	
-	//Update Header Style and Scroll to Top
+	// ACTUALIZA HEADER Y SCROLLTOP
 	function headerStyle() {
 		if($('.main-header').length){
 			var windowpos = $(window).scrollTop();
@@ -35,13 +35,13 @@
 	headerStyle();
 
 
-	//Submenu Dropdown Toggle
+	// SUBMENU MOSTRAR Y OCULTAR
 	if($('.main-header li.dropdown ul').length){
 		$('.main-header .navigation li.dropdown').append('<div class="dropdown-btn"><span class="fas fa-angle-down"></span></div>');
 		
 	}
 
-	//Mobile Nav Hide Show
+	// MENÚ PARA MÓVILES
 	if($('.mobile-menu').length){
 		
 		$('.mobile-menu .menu-box').mCustomScrollbar();
@@ -50,21 +50,21 @@
 		$('.mobile-menu .menu-box .menu-outer').append(mobileMenuContent);
 		$('.sticky-header .main-menu').append(mobileMenuContent);
 		
-		//Dropdown Button
+		// BOTÓN SUBMENÚ
 		$('.mobile-menu li.dropdown .dropdown-btn').on('click', function() {
 			$(this).toggleClass('open');
 			$(this).prev('ul').slideToggle(500);
 		});
-		//Dropdown Button
+		// BOTÓN SUBMENU
 		$('.mobile-menu li.dropdown .dropdown-btn').on('click', function() {
 			$(this).prev('.megamenu').slideToggle(900);
 		});
-		//Menu Toggle Btn
+		// TOGGLE
 		$('.mobile-nav-toggler').on('click', function() {
 			$('body').addClass('mobile-menu-visible');
 		});
 
-		//Menu Toggle Btn
+		// MENU TOGGLE BUTTON
 		$('.mobile-menu .menu-backdrop,.mobile-menu .close-btn').on('click', function() {
 			$('body').removeClass('mobile-menu-visible');
 		});
@@ -91,31 +91,7 @@
 		wow.init();
 	}
 
-	//Contact Form Validation
-	if($('#contact-form').length){
-		$('#contact-form').validate({
-			rules: {
-				username: {
-					required: true
-				},
-				email: {
-					required: true,
-					email: true
-				},
-				phone: {
-					required: true
-				},
-				subject: {
-					required: true
-				},
-				message: {
-					required: true
-				}
-			}
-		});
-	}
-
-	//Fact Counter + Text Count
+	// SECCIÓN CONTADORES
 	if($('.count-box').length){
 		$('.count-box').appear(function(){
 	
@@ -144,8 +120,7 @@
 		},{accY: 0});
 	}
 
-
-	//LightBox / Fancybox
+	// LIGHTBOX / FANCYBOX
 	if($('.lightbox-image').length) {
 		$('.lightbox-image').fancybox({
 			openEffect  : 'fade',
@@ -155,8 +130,6 @@
 			}
 		});
 	}
-
-
 
 	//Accordion Box
 	if($('.accordion-box').length){
