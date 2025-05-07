@@ -1,5 +1,4 @@
-section-contadores
-/* Responsive Css */
+/* ESTILOS RESPONSIVE */
 
 @media only screen and (max-width: 1799px) {
 
@@ -373,6 +372,12 @@ section-contadores
 
   .header-style-one {
     position: relative;
+    background-color: #d25c2c;
+  }
+
+  .header-lower {
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 
   .banner-carousel .slide-item {
@@ -564,7 +569,6 @@ section-contadores
   .contact-section {
     padding-bottom: 70px;
   }
-
 
 }
 
