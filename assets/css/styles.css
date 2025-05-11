@@ -3084,11 +3084,11 @@ div#mCSB_1_container {
 
 .gallery-page-section {
   position: relative;
-  padding: 120px 0px 90px 0px;
+  padding: 70px 0px 0px 0px;
 }
 
 .gallery-page-section .gallery-block-two .inner-box {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .gallery-page-section .gallery-block-two .inner-box .view-box a {
@@ -3154,6 +3154,11 @@ div#mCSB_1_container {
 .animals-details {
   position: relative;
   padding-top: 120px;
+}
+
+.animals-details-gallery {
+  position: relative;
+  padding-top: 20px;
 }
 
 .animals-details .animals-details-content {

@@ -539,12 +539,12 @@
 
   .gallery-page-section,
   .animals-page-section {
-    padding: 70px 0px 40px 0px;
+    padding: 70px 0px 20px 0px;
   }
 
   .animals-details,
   .sidebar-page-container {
-    padding: 70px 0px;
+    padding: 20px 0px;
   }
 
   .animals-details .animals-details-content {
