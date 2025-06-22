@@ -2,7 +2,6 @@
 	
 	"use strict";
 
-
 	// Oculta el Precarcador
 	function handlePreloader() {
 		if($('.loader-wrap').length){
@@ -214,7 +213,6 @@
 		});    		
 	}
 
-
 	// Four Item Carousel
 	if ($('.four-item-carousel').length) {
 		$('.four-item-carousel').owlCarousel({
@@ -304,7 +302,6 @@
 		});    		
 	}
 
-
 	// two-item-carousel
 	if ($('.two-item-carousel').length) {
 		$('.two-item-carousel').owlCarousel({
@@ -372,7 +369,6 @@
 		$('.scroll-nav').onePageNav();
 	}
 
-
 	// page direction
 	function directionswitch() {
 	  	if ($('.page_direction').length) {
@@ -384,7 +380,6 @@
 			});
 	  	};
 	}
-
 
 	//Tabs Box
 	if($('.tabs-box').length){
@@ -442,3 +437,23 @@
 	
 
 })(window.jQuery);
+
+
+(() => {
+  'use strict'
+
+  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  const forms = document.querySelectorAll('.needs-validation')
+
+  // Loop over them and prevent submission
+  Array.from(forms).forEach(form => {
+    form.addEventListener('submit', event => {
+      if (!form.checkValidity()) {
+        event.preventDefault()
+        event.stopPropagation()
+      }
+
+      form.classList.add('was-validated')
+    }, false)
+  })
+})()

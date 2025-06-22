@@ -170,6 +170,45 @@ img {
   }
 }
 
+.default-form .form-group {
+  position: relative;
+  margin-bottom: 20px;
+  padding: 0px 10px;
+}
+
+.default-form .form-group:last-child {
+  margin-bottom: 0px;
+}
+
+.default-form {
+  position: relative;
+  margin: 0px 5px;
+}
+
+.default-form .form-group input[type='text'],
+.default-form .form-group input[type='email'],
+.default-form .form-group textarea {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 63px;
+  background: #faf7f3;
+  border: 1px solid #faf7f3;
+  font-size: 14px;
+  padding: 10px 30px;
+  font-size: 14px;
+  color: #7a7d83;
+  transition: all 500ms ease;
+}
+
+.default-form .form-group input:focus,
+.default-form .form-group textarea:focus {}
+
+.default-form .form-group textarea {
+  height: 150px;
+  resize: none;
+}
+
 /** BOTONES **/
 
 .theme-btn {
@@ -334,8 +373,8 @@ img {
 .sec-title h2 {
   position: relative;
   display: block;
-  font-size: 50px;
-  line-height: 60px;
+  font-size: 40px;
+  line-height: 40px;
   padding-top: 11px;
   text-transform: uppercase;
 }
@@ -2934,16 +2973,7 @@ div#mCSB_1_container {
   transform: scale(1, 1);
 }
 
-/*** 
-
-====================================================================
-                        About-Page
-====================================================================
-
-***/
-
-
-/** page-title **/
+/** TÍTULOS DE PÁGINAS **/
 
 .page-title {
   position: relative;
@@ -2993,7 +3023,7 @@ div#mCSB_1_container {
 
 .page-title h1 {
   display: block;
-  font-size: 60px;
+  font-size: 43px;
   line-height: 62px;
   text-transform: uppercase;
   color: #fff;
@@ -3229,16 +3259,16 @@ div#mCSB_1_container {
 /*** 
 
 ====================================================================
-                        Contact-Page
+                        PÁGINA DE CONTACTO
 ====================================================================
 
 ***/
 
-/** google-map-section **/
+/** SECCIÓN DE GOOGLE MAPS **/
 
 .google-map-section {
   position: relative;
-  padding: 120px 0px 160px 0px;
+  padding: 120px 0px 40px 0px;
 }
 
 .google-map-section .map-inner {
@@ -3246,17 +3276,8 @@ div#mCSB_1_container {
   display: block;
 }
 
-.google-map-section .map-inner .map-canvas {
-  position: relative;
-  width: 100%;
-  height: 500px;
-}
 
 .google-map-section .map-inner .content-box {
-  position: absolute;
-  top: 40px;
-  right: 40px;
-  width: 460px;
   padding: 61px 60px 60px 60px;
   z-index: 1;
 }
@@ -3335,11 +3356,21 @@ div#mCSB_1_container {
 
 .contact-section {
   position: relative;
-  padding-bottom: 120px;
+  padding-top: 90px;
+  padding-bottom: 90px;
 }
 
 .contact-section .sec-title {
   margin-bottom: 47px;
+  color: #fff;
+}
+
+.contact-section .sec-title h2 {
+  color: #fff;
+}
+
+.invalid-feedback {
+  color: #e4f2ff;
 }
 
 .pricing-section .owl-carousel .owl-stage-outer {
