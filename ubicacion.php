@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GALERÍA - Fauna representativa del Napo Wildlife Center</title>
+  <title>CONTACTO - Fauna representativa del Napo Wildlife Center</title>
 
   <!-- Iconos -->
   <link rel="icon"
@@ -85,7 +85,7 @@
                   <li><a href="mamiferos.html">MAMÍFEROS</a></li>
                   <li><a href="reptiles.html">REPTILES</a></li>
                   <li><a href="anfibios.html">ANFIBIOS</a></li>
-                  <li class="current"><a href="galeria.html">GALERÍA</a></li>
+                  <li class="current"><a href="ubicacion.html">UBICACIÓN</a></li>
                 </ul>
               </div>
             </nav>
@@ -155,204 +155,96 @@
         <div class="content-box">
           <ul class="bread-crumb clearfix">
             <li><a href="index.html">Inicio</a></li>
-            <li>Galería</li>
+            <li>UBICACIÓN</li>
           </ul>
           <div class="title">
-            <h1>GALERÍA FOTOGRÁFICA</h1>
+            <h1>NAPO WILDLIFE CENTER</h1>
           </div>
         </div>
       </div>
     </section>
     <!-- SECCIÓN DE TÍTULO DE LA PÁGINA -->
 
-    <!-- GALERÍA DE IMÁGENES -->
-    <section class="gallery-page-section">
+    <!-- SECCIÓN DE GOOGLE MAPS -->
+    <section class="google-map-section">
+      <div class="auto-container">
+        <?php
+          $message = isset( $_GET['message'] ) ? $_GET['message'] : "";
+          if ($message !=="" && $message !=="Successfull"){
+        ?>
+        <p class="message">Tu mensaje se ha enviado correctamente. Nos comunicaremos tan pronto como nos sea posible.
+        </p>
+        <br>
+        <?php
+          }else if ($message !=="" && $message !=="Failed"){
+        ?>
+        <p class="message">ERROR: Tu mensaje no se pudo enviar. Intenta de nuevo más tarde.
+        </p>
+        <br>
+        <?php
+          }
+        ?>
+        <div class="sec-title centred">
+          <h2>UBÍCANOS</h2>
+        </div>
+        <div class="map-inner">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d33815.26163301153!2d-76.43986035170191!3d-0.49474552636212266!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d82999c9ba53b3%3A0xc8e4f58dc9e1ca0f!2sNapo%20Cultural%20Center%20Lodge!5e0!3m2!1ses-419!2sec!4v1750625160610!5m2!1ses-419!2sec"
+            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+    </section>
+    <!-- SECCIÓN DE GOOGLE MAPS -->
+
+    <!-- SECCIÓN FORMULARIO -->
+    <section class="contact-section centred">
+      <div class="img-wrap parallax-demo-1">
+        <div class="parallax-inner back-img" style="background-image: url(assets/images/sections/form-bg.jpg);">
+        </div>
+      </div>
       <div class="auto-container">
         <div class="row clearfix">
-          <div class="col-lg-4 col-md-4 col-sm-12 gallery-block">
-            <div class="gallery-block-two">
-              <div class="inner-box">
-                <figure class="image-box"><img src="assets/images/gallery/galeria-1-g.jpg" alt=""></figure>
-                <div class="view-box"><a href="assets/images/gallery/galeria-1.jpg" class="lightbox-image"
-                    data-fancybox="gallery"><i class="fa fa-eye"></i></a></div>
-              </div>
+          <div class="col-xl-8 col-lg-12 offset-xl-2 big-column">
+            <div class="sec-title centred">
+              <h2>¿TIENES ALGUNA DUDA? <br />Escríbenos un mensaje</h2>
             </div>
-          </div>
-          <div class="col-lg-4 col-md-4 col-sm-12 gallery-block">
-            <div class="gallery-block-two">
-              <div class="inner-box">
-                <figure class="image-box"><img src="assets/images/gallery/galeria-2-g.jpg" alt=""></figure>
-                <div class="view-box"><a href="assets/images/gallery/galeria-2.jpg" class="lightbox-image"
-                    data-fancybox="gallery"><i class="fa fa-eye"></i></a></div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-4 col-sm-12 gallery-block">
-            <div class="gallery-block-two">
-              <div class="inner-box">
-                <figure class="image-box"><img src="assets/images/gallery/galeria-3-g.jpg" alt=""></figure>
-                <div class="view-box"><a href="assets/images/gallery/galeria-3.jpg" class="lightbox-image"
-                    data-fancybox="gallery"><i class="fa fa-eye"></i></a></div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-4 col-sm-12 gallery-block">
-            <div class="gallery-block-two">
-              <div class="inner-box">
-                <figure class="image-box"><img src="assets/images/gallery/galeria-4-g.jpg" alt=""></figure>
-                <div class="view-box"><a href="assets/images/gallery/galeria-4.jpg" class="lightbox-image"
-                    data-fancybox="gallery"><i class="fa fa-eye"></i></a></div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-4 col-sm-12 gallery-block">
-            <div class="gallery-block-two">
-              <div class="inner-box">
-                <figure class="image-box"><img src="assets/images/gallery/galeria-5-g.jpg" alt=""></figure>
-                <div class="view-box"><a href="assets/images/gallery/galeria-5.jpg" class="lightbox-image"
-                    data-fancybox="gallery"><i class="fa fa-eye"></i></a></div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-4 col-sm-12 gallery-block">
-            <div class="gallery-block-two">
-              <div class="inner-box">
-                <figure class="image-box"><img src="assets/images/gallery/galeria-6-g.jpg" alt=""></figure>
-                <div class="view-box"><a href="assets/images/gallery/galeria-6.jpg" class="lightbox-image"
-                    data-fancybox="gallery"><i class="fa fa-eye"></i></a></div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-4 col-sm-12 gallery-block">
-            <div class="gallery-block-two">
-              <div class="inner-box">
-                <figure class="image-box"><img src="assets/images/gallery/galeria-7-g.jpg" alt=""></figure>
-                <div class="view-box"><a href="assets/images/gallery/galeria-7.jpg" class="lightbox-image"
-                    data-fancybox="gallery"><i class="fa fa-eye"></i></a></div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-4 col-sm-12 gallery-block">
-            <div class="gallery-block-two">
-              <div class="inner-box">
-                <figure class="image-box"><img src="assets/images/gallery/galeria-8-g.jpg" alt=""></figure>
-                <div class="view-box"><a href="assets/images/gallery/galeria-8.jpg" class="lightbox-image"
-                    data-fancybox="gallery"><i class="fa fa-eye"></i></a></div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-4 col-sm-12 gallery-block">
-            <div class="gallery-block-two">
-              <div class="inner-box">
-                <figure class="image-box"><img src="assets/images/gallery/galeria-9-g.jpg" alt=""></figure>
-                <div class="view-box"><a href="assets/images/gallery/galeria-9.jpg" class="lightbox-image"
-                    data-fancybox="gallery"><i class="fa fa-eye"></i></a></div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-4 col-sm-12 gallery-block">
-            <div class="gallery-block-two">
-              <div class="inner-box">
-                <figure class="image-box"><img src="assets/images/gallery/galeria-10-g.jpg" alt=""></figure>
-                <div class="view-box"><a href="assets/images/gallery/galeria-10.jpg" class="lightbox-image"
-                    data-fancybox="gallery"><i class="fa fa-eye"></i></a></div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-4 col-sm-12 gallery-block">
-            <div class="gallery-block-two">
-              <div class="inner-box">
-                <figure class="image-box"><img src="assets/images/gallery/galeria-11-g.jpg" alt=""></figure>
-                <div class="view-box"><a href="assets/images/gallery/galeria-11.jpg" class="lightbox-image"
-                    data-fancybox="gallery"><i class="fa fa-eye"></i></a></div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-4 col-sm-12 gallery-block">
-            <div class="gallery-block-two">
-              <div class="inner-box">
-                <figure class="image-box"><img src="assets/images/gallery/galeria-12-g.jpg" alt=""></figure>
-                <div class="view-box"><a href="assets/images/gallery/galeria-12.jpg" class="lightbox-image"
-                    data-fancybox="gallery"><i class="fa fa-eye"></i></a></div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-4 col-sm-12 gallery-block">
-            <div class="gallery-block-two">
-              <div class="inner-box">
-                <figure class="image-box"><img src="assets/images/gallery/galeria-13-g.jpg" alt=""></figure>
-                <div class="view-box"><a href="assets/images/gallery/galeria-13.jpg" class="lightbox-image"
-                    data-fancybox="gallery"><i class="fa fa-eye"></i></a></div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-4 col-sm-12 gallery-block">
-            <div class="gallery-block-two">
-              <div class="inner-box">
-                <figure class="image-box"><img src="assets/images/gallery/galeria-14-g.jpg" alt=""></figure>
-                <div class="view-box"><a href="assets/images/gallery/galeria-14.jpg" class="lightbox-image"
-                    data-fancybox="gallery"><i class="fa fa-eye"></i></a></div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-4 col-sm-12 gallery-block">
-            <div class="gallery-block-two">
-              <div class="inner-box">
-                <figure class="image-box"><img src="assets/images/gallery/galeria-15-g.jpg" alt=""></figure>
-                <div class="view-box"><a href="assets/images/gallery/galeria-15.jpg" class="lightbox-image"
-                    data-fancybox="gallery"><i class="fa fa-eye"></i></a></div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-4 col-sm-12 gallery-block">
-            <div class="gallery-block-two">
-              <div class="inner-box">
-                <figure class="image-box"><img src="assets/images/gallery/galeria-16-g.jpg" alt=""></figure>
-                <div class="view-box"><a href="assets/images/gallery/galeria-16.jpg" class="lightbox-image"
-                    data-fancybox="gallery"><i class="fa fa-eye"></i></a></div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-4 col-sm-12 gallery-block">
-            <div class="gallery-block-two">
-              <div class="inner-box">
-                <figure class="image-box"><img src="assets/images/gallery/galeria-17-g.jpg" alt=""></figure>
-                <div class="view-box"><a href="assets/images/gallery/galeria-17.jpg" class="lightbox-image"
-                    data-fancybox="gallery"><i class="fa fa-eye"></i></a></div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-4 col-sm-12 gallery-block">
-            <div class="gallery-block-two">
-              <div class="inner-box">
-                <figure class="image-box"><img src="assets/images/gallery/galeria-18-g.jpg" alt=""></figure>
-                <div class="view-box"><a href="assets/images/gallery/galeria-18.jpg" class="lightbox-image"
-                    data-fancybox="gallery"><i class="fa fa-eye"></i></a></div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-4 col-sm-12 gallery-block">
-            <div class="gallery-block-two">
-              <div class="inner-box">
-                <figure class="image-box"><img src="assets/images/gallery/galeria-19-g.jpg" alt=""></figure>
-                <div class="view-box"><a href="assets/images/gallery/galeria-19.jpg" class="lightbox-image"
-                    data-fancybox="gallery"><i class="fa fa-eye"></i></a></div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-4 col-sm-12 gallery-block">
-            <div class="gallery-block-two">
-              <div class="inner-box">
-                <figure class="image-box"><img src="assets/images/gallery/galeria-20-g.jpg" alt=""></figure>
-                <div class="view-box"><a href="assets/images/gallery/galeria-20.jpg" class="lightbox-image"
-                    data-fancybox="gallery"><i class="fa fa-eye"></i></a></div>
-              </div>
+            <div class="form-inner">
+              <form method="post" action="sendemail.php" id="contact-form" class="default-form needs-validation"
+                novalidate>
+                <div class="row clearfix">
+                  <div class="col-lg-6 col-md-6 col-sm-12 form-group">
+                    <input class="form-control" type="text" name="username" placeholder="Nombre Completo" required>
+                    <div class="invalid-feedback">Ingrese un nombre</div>
+                  </div>
+                  <div class="col-lg-6 col-md-6 col-sm-12 form-group">
+                    <input class="form-control" type="email" name="email" placeholder="Correo Electrónico" required>
+                    <div class="invalid-feedback">Ingrese un Email valido</div>
+                  </div>
+                  <div class="col-lg-6 col-md-12 col-sm-12 form-group">
+                    <input class="form-control" type="text" name="phone" required placeholder="Teléfono">
+                    <div class="invalid-feedback">Ingrese un Teléfono</div>
+                  </div>
+                  <div class="col-lg-6 col-md-12 col-sm-12 form-group">
+                    <input class="form-control" type="text" name="subject" required placeholder="Asunto">
+                    <div class="invalid-feedback">Asunto requerido</div>
+                  </div>
+                  <div class="col-lg-12 col-md-12 col-sm-12 form-group">
+                    <textarea class="form-control" name="message" placeholder="Escríbenos un mensaje"></textarea>
+                  </div>
+                  <div class="col-lg-12 col-md-12 col-sm-12 form-group message-btn mr-0">
+                    <button class="theme-btn btn-one" type="submit" name="submit-form"><span>ENVIAR
+                        MENSAJE</span></button>
+                  </div>
+                </div>
+              </form>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <!-- GALERÍA DE IMÁGENES -->
+    <!-- SECCIÓN FORMULARIO -->
 
     <!-- SECCIÓN VIDEO INFORMATIVO -->
     <section class="video-section centred">
@@ -470,6 +362,7 @@
   <script src="assets/js/parallax.js"></script>
   <script src="assets/js/owl.js"></script>
   <script src="assets/js/wow.js"></script>
+  <script src="assets/js/validation.js"></script>
   <script src="assets/js/jquery.fancybox.js"></script>
   <script src="assets/js/appear.js"></script>
   <script src="assets/js/scrollbar.js"></script>

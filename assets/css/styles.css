@@ -3268,90 +3268,12 @@ div#mCSB_1_container {
 
 .google-map-section {
   position: relative;
-  padding: 120px 0px 40px 0px;
+  padding: 70px 0px 50px 0px;
 }
 
 .google-map-section .map-inner {
   position: relative;
   display: block;
-}
-
-
-.google-map-section .map-inner .content-box {
-  padding: 61px 60px 60px 60px;
-  z-index: 1;
-}
-
-.google-map-section .content-box h2 {
-  display: block;
-  font-size: 40px;
-  line-height: 48px;
-  color: #fff;
-  text-transform: uppercase;
-  margin-bottom: 25px;
-}
-
-.google-map-section .content-box .info li {
-  position: relative;
-  display: block;
-  font-size: 20px;
-  line-height: 28px;
-  color: #fff;
-  padding-left: 37px;
-  margin-bottom: 12px;
-}
-
-.google-map-section .content-box .info li:last-child {
-  margin-bottom: 0px;
-}
-
-.google-map-section .content-box .info li i {
-  position: absolute;
-  left: 0px;
-  top: 2px;
-  font-size: 16px;
-}
-
-.google-map-section .content-box .info li a {
-  color: #fff;
-}
-
-
-.google-map-section .content-box .info li a:hover {
-  text-decoration: underline;
-}
-
-.google-map-section .content-box .info {
-  margin-bottom: 37px;
-}
-
-.google-map-section .content-box .inner {
-  position: relative;
-  display: block;
-  background: #fff;
-  padding: 29px 30px 30px 115px;
-}
-
-.google-map-section .content-box .inner .icon-box {
-  position: absolute;
-  left: 40px;
-  top: 30px;
-  font-size: 55px;
-  line-height: 55px;
-}
-
-.google-map-section .content-box .inner p {
-  display: block;
-  font-size: 16px;
-  line-height: 24px;
-  margin-bottom: 2px;
-}
-
-.google-map-section .content-box .inner h4 {
-  display: block;
-  font-size: 20px;
-  line-height: 28px;
-  font-weight: 400;
 }
 
 .contact-section {
@@ -3373,14 +3295,11 @@ div#mCSB_1_container {
   color: #e4f2ff;
 }
 
-.pricing-section .owl-carousel .owl-stage-outer {
-  overflow: visible;
-}
-
-.pricing-section .owl-carousel .owl-stage-outer .owl-item {
-  opacity: 0;
-}
-
-.pricing-section .owl-carousel .owl-stage-outer .owl-item.active {
-  opacity: 1;
+.message {
+  padding: 20px;
+  background-color: #ff9900;
+  color: #fff;
+  text-align: center;
+  width: 77%;
+  margin: 0 auto;
 }
