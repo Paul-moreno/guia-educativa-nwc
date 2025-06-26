@@ -1,8 +1,8 @@
 <?php
 
 // Define some constants
-define( "RECIPIENT_NAME", "Javier Jarrín" );
-define( "RECIPIENT_EMAIL", "prodsfly@hotmail.com" );
+define( "RECIPIENT_NAME", "Vida Silvestre NWC" );
+define( "RECIPIENT_EMAIL", "info@vidasilvestre.napowildlifecenter.com" );
 
 
 // Read the form values
@@ -16,9 +16,14 @@ $message = isset( $_POST['message'] ) ? preg_replace( "/(From:|To:|BCC:|CC:|Subj
 // If all values exist, send the email
 if ( $userName && $senderEmail && $userPhone && $userSubject && $message) {
   $recipient = RECIPIENT_NAME . " <" . RECIPIENT_EMAIL . ">";
-  $headers = "From: " . $userName . "";
-  $msgBody = " Name: ". $userName . " Email: ". $senderEmail . " Phone: ". $userPhone . " Subject: ". $userSubject . " Message: " . $message . "";
-  $success = mail( $recipient, $headers, $msgBody );
+  $subject = $userSubject;
+  $headers = "From: " . $senderEmail . "\r\n";
+  $headers .= "Reply-To: " . $senderEmail . "\r\n";
+  $headers .= 'MIME-Version: 1.0' . "\r\n";
+  $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
+
+  $msgBody = "Nombre: ". $userName . "Email: ". $senderEmail . "Teléfono: ". $userPhone . "Asunto: ". $userSubject . "Mensaje: " . $message . "";
+  $success = mail( $recipient, $subject, $headers, $message );
 
   //Set Location After Successsfull Submission
   header('Location: ubicacion.php?message=Successfull');

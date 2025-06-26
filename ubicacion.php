@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CONTACTO - Fauna representativa del Napo Wildlife Center</title>
+  <title>UBICACIÓN - Fauna representativa del Napo Wildlife Center</title>
 
   <!-- Iconos -->
   <link rel="icon"
@@ -85,7 +85,7 @@
                   <li><a href="mamiferos.html">MAMÍFEROS</a></li>
                   <li><a href="reptiles.html">REPTILES</a></li>
                   <li><a href="anfibios.html">ANFIBIOS</a></li>
-                  <li class="current"><a href="ubicacion.html">UBICACIÓN</a></li>
+                  <li class="current"><a href="ubicacion.php">UBICACIÓN</a></li>
                 </ul>
               </div>
             </nav>
@@ -170,13 +170,13 @@
       <div class="auto-container">
         <?php
           $message = isset( $_GET['message'] ) ? $_GET['message'] : "";
-          if ($message !=="" && $message !=="Successfull"){
+          if ($message !=="" && $message =="Successfull"){
         ?>
         <p class="message">Tu mensaje se ha enviado correctamente. Nos comunicaremos tan pronto como nos sea posible.
         </p>
         <br>
         <?php
-          }else if ($message !=="" && $message !=="Failed"){
+          }else if ($message !=="" && $message =="Failed"){
         ?>
         <p class="message">ERROR: Tu mensaje no se pudo enviar. Intenta de nuevo más tarde.
         </p>
