@@ -291,6 +291,37 @@
     margin-bottom: 30px;
   }
 
+  .image_block_three .image-box .image img {
+    margin-top: 21px;
+    max-width: 100% !important;
+  }
+
+  .image_block_three .image-box .image2 img {
+    margin-top: 21px;
+    max-width: 100% !important;
+  }
+
+  .animals-page-section {
+    position: relative;
+    padding: 40px 0px 40px 0px;
+  }
+
+  .page-title h2 {
+    font-size: 30px;
+  }
+
+  .page-title h4 {
+    font-size: 14px;
+  }
+
+  .about-style-two {
+    padding: 40px 20px 30px 20px !important;
+  }
+
+  .especie-section {
+    padding: 40px 20px 30px 20px !important;
+  }
+
   .image_block_three .image-box:before,
   .image_block_three .image-box:after {
     display: none;
@@ -391,8 +422,8 @@
   }
 
   .sec-title h2 {
-    font-size: 36px;
-    line-height: 46px;
+    font-size: 25px;
+    line-height: auto;
   }
 
   .gallery-section {

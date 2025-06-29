@@ -57,8 +57,6 @@
                     class="fab fa-instagram"></i></a></li>
               <li><a href="https://www.youtube.com/@NapoWildlifeCenterCKA" rel="nofollow" target="_blank"><i
                     class="fab fa-youtube"></i></a></li>
-              <li><a href="https://t.me/+593989276879" rel="nofollow" target="_blank"><i
-                    class="fab fa-telegram"></i></a></li>
             </ul>
           </div>
         </div>
@@ -78,13 +76,12 @@
             <nav class="main-menu navbar-expand-md navbar-light">
               <div class="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
                 <ul class="navigation clearfix">
-                  <!-- <li class="current"><a href="index.html">INICIO</a>
-                  </li> -->
-                  <li><a href="index.html">SOBRE EL PROYECTO</a></li>
+                  <li><a href="sobre-el-proyecto.html">SOBRE EL PROYECTO</a></li>
                   <li><a href="aves.html">AVES</a></li>
                   <li><a href="mamiferos.html">MAMÍFEROS</a></li>
                   <li><a href="reptiles.html">REPTILES</a></li>
                   <li><a href="anfibios.html">ANFIBIOS</a></li>
+                  <li><a href="galeria.html">GALERIA</a></li>
                   <li class="current"><a href="ubicacion.php">UBICACIÓN</a></li>
                 </ul>
               </div>
@@ -148,18 +145,12 @@
     <section class="page-title">
       <div class="img-wrap parallax-demo-1">
         <div class="parallax-inner back-img"
-          style="background-image: url(assets/images/sections/page-title-galeria.jpg);">
+          style="background-image: url(assets/images/sections/page-title-ubicacion.jpg);">
         </div>
       </div>
       <div class="auto-container">
         <div class="content-box">
-          <ul class="bread-crumb clearfix">
-            <li><a href="index.html">Inicio</a></li>
-            <li>UBICACIÓN</li>
-          </ul>
-          <div class="title">
-            <h1>NAPO WILDLIFE CENTER</h1>
-          </div>
+          <h2 class="centred">Ubicación</h2>
         </div>
       </div>
     </section>
