@@ -81,7 +81,6 @@
                   <li><a href="mamiferos.html">MAMÍFEROS</a></li>
                   <li><a href="reptiles.html">REPTILES</a></li>
                   <li><a href="anfibios.html">ANFIBIOS</a></li>
-                  <li><a href="galeria.html">GALERIA</a></li>
                   <li class="current"><a href="ubicacion.php">UBICACIÓN</a></li>
                 </ul>
               </div>
@@ -156,28 +155,112 @@
     </section>
     <!-- SECCIÓN DE TÍTULO DE LA PÁGINA -->
 
+    <!-- SECCIÓN FORMULARIO -->
+    <section class="contact-section centred">
+      <?php
+        $message = isset( $_GET['message'] ) ? $_GET['message'] : "";
+        if ($message !=="" && $message =="Successfull"){
+      ?>
+      <p class="message">Tu mensaje se ha enviado correctamente. Nos comunicaremos tan pronto como nos sea posible.
+      </p>
+      <br>
+      <?php
+        }else if ($message !=="" && $message =="Failed"){
+      ?>
+      <p class="message">ERROR: Tu mensaje no se pudo enviar. Intenta de nuevo más tarde.
+      </p>
+      <br>
+      <?php
+        }
+      ?>
+      <div class="auto-container">
+        <div class="row clearfix">
+          <div class="col-xl-8 col-lg-12 offset-xl-2 big-column">
+            <div class="sec-title centred">
+              <h2>¿Tienes preguntas o comentarios?</h2>
+              <p>La garza agami, una especie poco común, tiene un tamaño de 66 a 76cm. Las patas son relativamente
+                cortas para una garza, pero tiene un pico delgado y largo.</p>
+            </div>
+            <div class="form-inner">
+              <form method="post" action="sendemail.php" id="contact-form" class="default-form needs-validation"
+                novalidate>
+                <div class="row clearfix">
+                  <div class="col-lg-6 col-md-6 col-sm-12 form-group">
+                    <input class="form-control" type="text" name="username" placeholder="Nombres completos*" required>
+                    <div class="invalid-feedback">Ingrese un nombre</div>
+                  </div>
+                  <div class="col-lg-6 col-md-6 col-sm-12 form-group">
+                    <input class="form-control" type="email" name="email" placeholder="Email*" required>
+                    <div class="invalid-feedback">Ingrese un Email valido</div>
+                  </div>
+                  <div class="col-lg-6 col-md-12 col-sm-12 form-group">
+                    <input class="form-control" type="text" name="motivo" required placeholder="Motivo de Contacto*">
+                    <div class="invalid-feedback">Ingrese un Motivo</div>
+                  </div>
+                  <div class="col-lg-6 col-md-12 col-sm-12 form-group">
+                    <input class="form-control" type="text" name="comoteenteraste" required
+                      placeholder="¿Cómo te enteraste del sitio?">
+                    <div class="invalid-feedback">Complete este campo</div>
+                  </div>
+                  <div class="col-lg-12 col-md-12 col-sm-12 form-group">
+                    <textarea class="form-control" name="message" placeholder="Comentarios y preguntas*"
+                      required></textarea>
+                    <div class="invalid-feedback">Complete este campo</div>
+                  </div>
+                  <div class="col-lg-12 col-md-12 col-sm-12 form-group message-btn mr-0">
+                    <button class="theme-btn btn-one" type="submit" name="submit-form"><span>Obtener más
+                        información</span></button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- SECCIÓN FORMULARIO -->
+
+    <!-- SECCIÓN DE ICONOS INFORMATIVOS -->
+    <section class="icon-section centred">
+      <div class="auto-container">
+        <div class="row clearfix">
+          <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
+            <div class="sec-title centred">
+              <img src="assets/images/resource/reservations.png" />
+              <h2>Reservaciones</h2>
+              <p>sales@napowildlifecenter.com</p>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
+            <div class="sec-title centred">
+              <img src="assets/images/resource/marketing.png" />
+              <h2>Marketing</h2>
+              <p>marketing@napowildlifecenter.com</p>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
+            <div class="sec-title centred">
+              <img src="assets/images/resource/media.png" />
+              <h2>Medios de Comunicación</h2>
+              <p>info@napowildlifecenter.com</p>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
+            <div class="sec-title centred">
+              <img src="assets/images/resource/operations.png" />
+              <h2>Operaciones</h2>
+              <p>operations@napowildlifecenter.com</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
     <!-- SECCIÓN DE GOOGLE MAPS -->
     <section class="google-map-section">
-      <div class="auto-container">
-        <?php
-          $message = isset( $_GET['message'] ) ? $_GET['message'] : "";
-          if ($message !=="" && $message =="Successfull"){
-        ?>
-        <p class="message">Tu mensaje se ha enviado correctamente. Nos comunicaremos tan pronto como nos sea posible.
-        </p>
-        <br>
-        <?php
-          }else if ($message !=="" && $message =="Failed"){
-        ?>
-        <p class="message">ERROR: Tu mensaje no se pudo enviar. Intenta de nuevo más tarde.
-        </p>
-        <br>
-        <?php
-          }
-        ?>
-        <div class="sec-title centred">
-          <h2>UBÍCANOS</h2>
-        </div>
+      <div>
         <div class="map-inner">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d33815.26163301153!2d-76.43986035170191!3d-0.49474552636212266!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d82999c9ba53b3%3A0xc8e4f58dc9e1ca0f!2sNapo%20Cultural%20Center%20Lodge!5e0!3m2!1ses-419!2sec!4v1750625160610!5m2!1ses-419!2sec"
@@ -189,73 +272,6 @@
     </section>
     <!-- SECCIÓN DE GOOGLE MAPS -->
 
-    <!-- SECCIÓN FORMULARIO -->
-    <section class="contact-section centred">
-      <div class="img-wrap parallax-demo-1">
-        <div class="parallax-inner back-img" style="background-image: url(assets/images/sections/form-bg.jpg);">
-        </div>
-      </div>
-      <div class="auto-container">
-        <div class="row clearfix">
-          <div class="col-xl-8 col-lg-12 offset-xl-2 big-column">
-            <div class="sec-title centred">
-              <h2>¿TIENES ALGUNA DUDA? <br />Escríbenos un mensaje</h2>
-            </div>
-            <div class="form-inner">
-              <form method="post" action="sendemail.php" id="contact-form" class="default-form needs-validation"
-                novalidate>
-                <div class="row clearfix">
-                  <div class="col-lg-6 col-md-6 col-sm-12 form-group">
-                    <input class="form-control" type="text" name="username" placeholder="Nombre Completo" required>
-                    <div class="invalid-feedback">Ingrese un nombre</div>
-                  </div>
-                  <div class="col-lg-6 col-md-6 col-sm-12 form-group">
-                    <input class="form-control" type="email" name="email" placeholder="Correo Electrónico" required>
-                    <div class="invalid-feedback">Ingrese un Email valido</div>
-                  </div>
-                  <div class="col-lg-6 col-md-12 col-sm-12 form-group">
-                    <input class="form-control" type="text" name="phone" required placeholder="Teléfono">
-                    <div class="invalid-feedback">Ingrese un Teléfono</div>
-                  </div>
-                  <div class="col-lg-6 col-md-12 col-sm-12 form-group">
-                    <input class="form-control" type="text" name="subject" required placeholder="Asunto">
-                    <div class="invalid-feedback">Asunto requerido</div>
-                  </div>
-                  <div class="col-lg-12 col-md-12 col-sm-12 form-group">
-                    <textarea class="form-control" name="message" placeholder="Escríbenos un mensaje"></textarea>
-                  </div>
-                  <div class="col-lg-12 col-md-12 col-sm-12 form-group message-btn mr-0">
-                    <button class="theme-btn btn-one" type="submit" name="submit-form"><span>ENVIAR
-                        MENSAJE</span></button>
-                  </div>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- SECCIÓN FORMULARIO -->
-
-    <!-- SECCIÓN VIDEO INFORMATIVO -->
-    <section class="video-section centred">
-      <div class="img-wrap parallax-demo-1">
-        <div class="parallax-inner back-img" style="background-image: url(assets/images/sections/video-bg.jpg);">
-        </div>
-      </div>
-      <div class="auto-container">
-        <div class="inner-box">
-          <div class="video-btn">
-            <a href="https://www.youtube.com/watch?v=xbS3MDDUJpk" class="lightbox-image" data-caption=""><i
-                class="fas fa-play"></i></a>
-          </div>
-          <p>Conoce un poco sobre el</p>
-          <h2>NAPO WILDLIFE CENTER</h2>
-        </div>
-      </div>
-    </section>
-    <!-- SECCIÓN VIDEO INFORMATIVO -->
-
     <!-- PIE DE PÁGINA -->
     <section class="main-footer">
       <div class="footer-top">
@@ -266,28 +282,8 @@
               <div class="footer-widget logo-widget">
                 <figure class="footer-logo"><a href="index.html"><img src="assets/images/footer-logo.png" alt=""></a>
                 </figure>
-                <ul class="footer-social clearfix">
-                  <li><a href="https://www.facebook.com/napowildlifecentercka/" rel="nofollow" target="_blank"><i
-                        class="fab fa-facebook-f"></i></a></li>
-                  <li><a href="https://www.instagram.com/napowildlifecenter/" rel="nofollow" target="_blank"><i
-                        class="fab fa-instagram"></i></a></li>
-                  <li><a href="https://www.youtube.com/@NapoWildlifeCenterCKA" rel="nofollow" target="_blank"><i
-                        class="fab fa-youtube"></i></a></li>
-                  <li><a href="https://t.me/+593989276879" rel="nofollow" target="_blank"><i
-                        class="fab fa-telegram"></i></a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-lg-2 col-md-6 col-sm-3 footer-column">
-              <div class="footer-widget links-widget">
-                <div class="widget-title">
-                  <h5>Links</h5>
-                </div>
-                <div class="widget-content">
-                  <ul class="links-list clearfix">
-                    <li><a href="index.html">Sobre el proyecto</a></li>
-                  </ul>
-                </div>
+                <p>Explora una ventana al mundo natural. Aquí, cada especie, cada sonido y cada mirada es parte de una
+                  experiencia inolvidable en uno de esos lugares más biodiversos del planeta.</p>
               </div>
             </div>
             <div class="col-lg-2 col-md-6 col-sm-3 footer-column">
@@ -301,6 +297,21 @@
                     <li><a href="mamiferos.html">Mamíferos</a></li>
                     <li><a href="reptiles.html">Reptiles</a></li>
                     <li><a href="anfibios.html">Anfibios</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-6 col-sm-3 footer-column">
+              <div class="footer-widget links-widget">
+                <div class="widget-title">
+                  <h5>ENLACES ÚTILES</h5>
+                </div>
+                <div class="widget-content">
+                  <ul class="links-list clearfix">
+                    <li><a href="galeria.html">Galeria</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="videos.html">Videos</a></li>
+                    <li><a href="ubicacion.php">Ubicación</a></li>
                   </ul>
                 </div>
               </div>
@@ -329,7 +340,7 @@
       <div class="footer-bottom centred">
         <div class="auto-container">
           <div class="copyright">
-            <p>&copy; Todos los derechos reservados.</p>
+            <p>&copy; Copyright 2025 - UNIR</p>
           </div>
         </div>
       </div>

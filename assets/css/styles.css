@@ -192,8 +192,10 @@ img {
   display: block;
   width: 100%;
   height: 63px;
-  background: #faf7f3;
-  border: 1px solid #faf7f3;
+  background: transparent;
+  border-radius: 0;
+  border: 0;
+  border-bottom: 1px solid #aeaeae;
   font-size: 14px;
   padding: 10px 30px;
   font-size: 14px;
@@ -1390,7 +1392,7 @@ div#mCSB_1_container {
 .banner-carousel .content-box h3 {
   position: relative;
   display: block;
-  font-size: 25px;
+  font-size: 22px;
   line-height: auto;
   font-weight: 300;
   margin-bottom: 25px;
@@ -1461,7 +1463,7 @@ div#mCSB_1_container {
   position: relative;
   display: block;
   color: #fff;
-  font-size: 40px;
+  font-size: 35px;
   line-height: auto;
   font-weight: 600;
   margin-bottom: 21px;
@@ -2907,6 +2909,51 @@ div#mCSB_1_container {
   text-transform: capitalize;
 }
 
+/** VIDEO ITEM **/
+
+.video-item {
+  position: relative;
+  padding: 125px 0px 90px 0px;
+  margin-bottom: 25px;
+}
+
+.video-item:before {
+  position: absolute;
+  content: '';
+  background: #0e131f;
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+  opacity: 0.3;
+}
+
+.video-item .inner-box .video-btn {
+  position: relative;
+  display: block;
+  margin-bottom: 46px;
+}
+
+.video-item .inner-box .video-btn a {
+  position: relative;
+  display: inline-block;
+  width: 107px;
+  height: 107px;
+  line-height: 107px;
+  font-size: 24px;
+  color: #fff;
+  text-align: center;
+  border-radius: 99px;
+  background-color: transparent;
+  border: #fff solid 1px;
+}
+
+.video-item .inner-box .video-btn a:hover {
+  color: #fff;
+  background-color: #ad461c;
+  border: #ad461c solid 1px;
+}
+
 
 /** gallery-style-two **/
 
@@ -3185,7 +3232,7 @@ div#mCSB_1_container {
   border-bottom: 1px solid #e6e1db;
 }
 
-/** gallery-page-section **/
+/** SECCIÓN PARA LA PÁGINA DE GALERÍA **/
 
 .gallery-page-section {
   position: relative;
@@ -3200,6 +3247,13 @@ div#mCSB_1_container {
   color: #fff;
 }
 
+/** SECCIÓN PARA LA PÁGINA DE GALERÍA **/
+
+.gallery-video-section {
+  padding: 70px 0px 70px 0px;
+  display: block;
+  position: relative;
+}
 
 /** error-section **/
 
@@ -3346,12 +3400,14 @@ div#mCSB_1_container {
 
 .google-map-section {
   position: relative;
-  padding: 70px 0px 50px 0px;
+  padding: 0px;
 }
 
 .google-map-section .map-inner {
+  padding: 0px !important;
   position: relative;
   display: block;
+  margin-bottom: -12px !important;
 }
 
 .contact-section {
@@ -3362,11 +3418,21 @@ div#mCSB_1_container {
 
 .contact-section .sec-title {
   margin-bottom: 47px;
-  color: #fff;
+  color: #222;
 }
 
 .contact-section .sec-title h2 {
-  color: #fff;
+  color: #222;
+  margin-bottom: 14px;
+  font-size: 35px;
+}
+
+.contact-section .sec-title p {
+  color: #222;
+  font-size: 14px;
+  line-height: 21px;
+  max-width: 70%;
+  margin: 0 auto;
 }
 
 .invalid-feedback {
@@ -3384,4 +3450,84 @@ div#mCSB_1_container {
 
 .filas {
   margin-bottom: 50px;
+}
+
+/*=========================
+        PÁGINA DE FAQ 
+===========================*/
+
+.faq-page-section {
+  padding: 80px 0px 70px 0px;
+}
+
+.accordion-item {
+  padding: 10px 20px 10px 20px;
+  border: none;
+  background-color: #ededed;
+  margin-bottom: 10px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.accordion-item .accordion-header .accordion-button {
+  font-size: 20px !important;
+  font-weight: 500;
+  color: #ad461c;
+}
+
+.accordion-button {
+  padding: 20px 0;
+  font-weight: 600;
+  color: #333;
+  background-color: transparent;
+}
+
+.accordion-button:not(.collapsed) {
+  color: #333;
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+  border-color: transparent;
+}
+
+.accordion-button::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23333'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
+.accordion-body {
+  padding: 0 0 20px 0;
+  line-height: 23px;
+}
+
+/* SECCIÓN DE ICONOS INFORMATIVOS */
+
+.icon-section {
+  position: relative;
+  padding-top: 40px;
+  padding-bottom: 50px;
+}
+
+.icon-section .sec-title {
+  margin-bottom: 47px;
+  color: #222;
+}
+
+.icon-section .sec-title h2 {
+  color: #222;
+  margin-bottom: 14px;
+  font-size: 20px;
+}
+
+.icon-section .sec-title p {
+  color: #222;
+  font-size: 14px;
+  line-height: 21px;
+  max-width: 70%;
+  margin: 0 auto;
+}
+
+.icon-section .sec-title img {
+  max-width: 70px;
 }
