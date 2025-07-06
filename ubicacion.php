@@ -203,8 +203,7 @@
                     <div class="invalid-feedback">Complete este campo</div>
                   </div>
                   <div class="col-lg-12 col-md-12 col-sm-12 form-group">
-                    <textarea class="form-control" name="message" placeholder="Comentarios y preguntas*"
-                      required></textarea>
+                    <textarea class="form-control" name="message" required placeholder="Comentarios y preguntas*"></textarea>
                     <div class="invalid-feedback">Complete este campo</div>
                   </div>
                   <div class="col-lg-12 col-md-12 col-sm-12 form-group message-btn mr-0">
