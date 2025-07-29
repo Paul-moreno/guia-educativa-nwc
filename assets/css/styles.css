@@ -2002,41 +2002,6 @@ div#mCSB_1_container {
 }
 
 
-/** clients-section **/
-
-.clients-section {
-  position: relative;
-  padding: 120px 0px 239px 0px;
-}
-
-.clients-section:before {
-  position: absolute;
-  content: '';
-  background: #151c2c;
-  width: 100%;
-  height: 100%;
-  left: 0px;
-  top: 0px;
-  opacity: 0.9;
-}
-
-.clients-section .clients-logo {
-  position: relative;
-  display: block;
-}
-
-.clients-section .clients-logo img {
-  position: relative;
-  display: block;
-  margin: 0 auto;
-  opacity: 0.2;
-  transition: all 500ms ease;
-}
-
-.clients-section .clients-logo img:hover {
-  opacity: 0.8;
-}
-
 .content_block_two .content-box {
   position: relative;
   display: block;
@@ -3200,34 +3165,6 @@ div#mCSB_1_container {
   transform: scale(1.05);
 }
 
-.testimonial-section .pattern-layer {
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.testimonil-block-one .inner-box {
-  box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.05);
-  background: #fff;
-}
-
-.testimonial-section .owl-carousel .owl-stage-outer {
-  overflow: visible;
-}
-
-.testimonial-section .owl-carousel .owl-stage-outer .owl-item {
-  opacity: 0;
-}
-
-.testimonial-section .owl-carousel .owl-stage-outer .owl-item.active {
-  opacity: 1;
-}
-
 .border-bottom {
   border-bottom: 1px solid #e6e1db;
 }
@@ -3236,7 +3173,7 @@ div#mCSB_1_container {
 
 .gallery-page-section {
   position: relative;
-  padding: 70px 0px 0px 0px;
+  padding: 70px 0px 50px 0px;
 }
 
 .gallery-page-section .gallery-block-two .inner-box {
@@ -3288,15 +3225,13 @@ div#mCSB_1_container {
   margin-bottom: 60px;
 }
 
-
 /*** 
 
 ====================================================================
-                        Animals-Page
+                        PÁGINA DE ANIMALES
 ====================================================================
 
 ***/
-
 
 .animals-page-section {
   position: relative;

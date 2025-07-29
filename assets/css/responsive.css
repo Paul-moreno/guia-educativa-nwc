@@ -306,6 +306,10 @@
     padding: 40px 0px 40px 0px;
   }
 
+  .gallery-page-section {
+    padding: 30px 0px 20px 0px !important;
+  }
+
   .page-title h2 {
     font-size: 30px;
   }
