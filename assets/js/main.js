@@ -165,7 +165,7 @@
     		active: true,
 			smartSpeed: 1000,
 			autoplay: 6000,
-            navText: [ '<span class="flaticon-left-arrow"></span>', '<span class="flaticon-right-arrow"></span>' ],
+            navText: [ '<span class="fa-solid fa-angle-left"></span>', '<span class="fa-solid fa-angle-right"></span>' ],
             responsive:{
                 0:{
                     items:1

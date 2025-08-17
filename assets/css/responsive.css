@@ -227,28 +227,6 @@
     padding-left: 0px;
   }
 
-  .events-section .bg-layer {
-    width: 100%;
-  }
-
-  .events-section .bg-image {
-    display: none;
-  }
-
-  .events-section .sec-title h2 {
-    color: #222;
-    margin-bottom: 15px;
-  }
-
-  .events-section .sec-title {
-    max-width: 100%;
-    margin-bottom: 30px;
-  }
-
-  .events-block-one .inner-box {
-    min-height: 262px;
-  }
-
   .counter-block-one .inner-box {
     margin-bottom: 30px;
   }
@@ -493,22 +471,6 @@
     padding-top: 70px;
   }
 
-  .testimonial-section {
-    padding: 70px 0px;
-  }
-
-  .events-block-one:last-child .inner-box {
-    min-height: auto;
-  }
-
-  .events-section {
-    padding: 70px 0px;
-  }
-
-  .events-section .bg-layer {
-    height: 100%;
-  }
-
   .section-contadores {
     padding: 70px 0px 35px 0px;
   }
@@ -546,7 +508,7 @@
   }
 
   .sec-pad {
-    padding: 70px 0px;
+    padding: 40px 0px !important;
   }
 
   .animals-section {
@@ -669,15 +631,6 @@
     padding-right: 0px;
   }
 
-  .news-block-three .inner-box {
-    padding-left: 0px;
-  }
-
-  .news-block-three .inner-box .image-box {
-    position: relative;
-    margin-bottom: 20px;
-  }
-
   .rtl .events-block-one .inner-box {
     padding-right: 0px;
   }
@@ -764,23 +717,6 @@
 
   .header-style-two .header-lower .menu-right-content {
     margin-right: 0px;
-  }
-
-  .news-block-two .inner-box .lower-content {
-    padding-left: 30px;
-    padding-right: 30px;
-  }
-
-  .rtl .main-header .search-box-outer {
-    margin-left: 20px;
-  }
-
-  .rtl .header-top .top-right .social-links li {
-    float: none;
-  }
-
-  .rtl .header-top .top-right .social-links {
-    margin-left: 0px;
   }
 
   .chooseus-section .content-box .content-inner .image-layer {
